@@ -292,6 +292,9 @@ export default function Home() {
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { background: #FFD700; font-family: 'DM Sans', sans-serif; }
         @keyframes fadeInUp { from { opacity:0; transform:translateY(12px) } to { opacity:1; transform:translateY(0) } }
+        @media (max-width: 720px) {
+          aside { display:none !important; }
+        }
       `}</style>
 
       {/* Ticker */}
@@ -324,6 +327,10 @@ export default function Home() {
             </div>
           ))}
         </div>
+      </div>
+
+      <div style={{ background: "#eee9d8", borderBottom: "4px solid #000", padding: "18px 24px", textAlign: "center" }}>
+        <a href="/fallen" style={{ display: "inline-flex", alignItems: "center", gap: 10, background: "#000", color: "#FFD700", border: "3px solid #000", boxShadow: "5px 5px 0 #8b0000", padding: "13px 22px", fontSize: 13, fontWeight: 900, letterSpacing: "0.04em" }}>查看 2026 阵亡项目名录 →</a>
       </div>
 
       {/* Body: sidebar + grid */}
@@ -366,7 +373,7 @@ export default function Home() {
       {/* Footer */}
       <div style={{ background: "#000", borderTop: "4px solid #000", padding: "14px 24px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <span style={{ fontSize: 11, color: "#555", fontWeight: 700 }}>数据仅供娱乐参考，不构成投资建议</span>
-        <span style={{ fontSize: 11, color: "#555", fontWeight: 700, fontFamily: "monospace" }}>最后更新 2026-03-06</span>
+        <span style={{ fontSize: 11, color: "#555", fontWeight: 700, fontFamily: "monospace" }}>最后更新 2026-08-12</span>
       </div>
 
 
